@@ -2,21 +2,28 @@ import React from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Card from './components/Card';
+import data from './data';
 
 
 export default function App() {
+
+  const cardDataElements = data.map((cardData) => {
+    return(
+      <Card
+        key={cardData.id}
+        {...cardData} //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax#spread_in_object_literals
+      />
+    );
+  })
+
   return (
     <div>
       <Navbar />
       <Hero />
-      <Card
-        img="zaferes_card.png"
-        rating={5.0}
-        reviewCount={6}
-        country="USA"
-        title="Life Lessons with Katie Zaferes"
-        price={136}
-      />
+      <section className='cards-list'>
+        {cardDataElements}
+      </section>
+      
     </div>
   );
 }
