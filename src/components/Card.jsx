@@ -12,13 +12,14 @@ export default function Card(props) {
     return (
         <div className='card'>
             {badgeText && <div className='card--badge'>{badgeText}</div>}
+
             <img
                 src={props.coverImg} alt="card photo"
                 className='card--img'
             />
             <div className='card--stats'>
                 <img
-                    src="Star_icon.png" alt="staricon"
+                    src="Star_icon.png" alt="star-icon"
                     className='card--star'
                 />
                 <span>{props.stats.rating}</span>

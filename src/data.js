@@ -37,5 +37,44 @@ export default [
         },
         location: "Norway",
         openSpots: 3,
+    },
+    {
+        id: 4,
+        title: "Architecture Photography",
+        description: "I will share with you what I call \"Positively Impactful Moments of Disappointment.\" Throughout my career, many of my highest moments only came after setbacks and losses. But learning from those difficult moments is what gave me the ability to rise above them and reach my goals.",
+        price: 100,
+        coverImg: "white-building.jpg",
+        stats: {
+            rating: 5.0,
+            reviewCount: 14
+        },
+        location: "Japan",
+        openSpots: 12,
+    },
+    {
+        id: 5,
+        title: "State of Art",
+        description: "",
+        price: 115,
+        coverImg: "kartina-maslom.jpeg",
+        stats: {
+            rating: 4.6,
+            reviewCount: 45
+        },
+        location: "Online",
+        openSpots: 11,
+    },
+    {
+        id: 6,
+        title: "History of cars",
+        description: "",
+        price: 60,
+        coverImg: "red-car.png",
+        stats: {
+            rating: 4.9,
+            reviewCount: 23
+        },
+        location: "German",
+        openSpots: 0,
     }
 ]

@@ -7,11 +7,11 @@ import data from './data';
 
 export default function App() {
 
-  const cardDataElements = data.map((cardData) => {
+  const cardDataElements = data.map((item) => {
     return(
       <Card
-        key={cardData.id}
-        {...cardData} //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax#spread_in_object_literals
+        key={item.id}
+        {...item} //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax#spread_in_object_literals
       />
     );
   })
@@ -20,6 +20,7 @@ export default function App() {
     <div>
       <Navbar />
       <Hero />
+      
       <section className='cards-list'>
         {cardDataElements}
       </section>
