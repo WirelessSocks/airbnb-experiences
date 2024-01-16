@@ -10,12 +10,13 @@ export default function Card(props) {
         badgeText = "Online"
     }
     return (
+        
         <div className='card'>
             {badgeText && <div className='card--badge'>{badgeText}</div>}
 
             <img
-                src={props.coverImg} alt="card photo"
-                className='card--img'
+                src={props.coverImg} alt="card"
+                className='card--pic'
             />
             <div className='card--stats'>
                 <img
